@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudip Dhungana - Full Stack Developer | Portfolio</title>
+    <meta name="description" content="Sudip Dhungana - Full Stack Developer with 3+ years experience in React, Node.js, Python. View my portfolio of web applications and get in touch.">
+    <meta name="keywords" content="Full Stack Developer, React, Node.js, Python, Web Development, JavaScript, Portfolio">
+    <meta name="author" content="Sudip Dhungana">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sudipdgn.com/">
+    <meta property="og:title" content="Sudip Dhungana - Full Stack Developer | Portfolio">
+    <meta property="og:description" content="Full Stack Developer with 3+ years experience in React, Node.js, Python. Building innovative web applications and digital solutions.">
+    <meta property="og:image" content="https://sudipdgn.com/images/profile.JPG">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sudipdgn.com/">
+    <meta property="twitter:title" content="Sudip Dhungana - Full Stack Developer">
+    <meta property="twitter:description" content="Full Stack Developer specializing in modern web applications. Let's build something amazing together!">
+    <meta property="twitter:image" content="https://sudipdgn.com/images/profile.JPG">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#004d40">
+    <meta name="msapplication-TileColor" content="#004d40">
+    <!-- Browser-specific theme colors for better compatibility -->
+    <meta name="msapplication-navbutton-color" content="#004d40">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fallback for browsers that don't support theme-color -->
+    <meta name="application-name" content="Sudip Dhungana Portfolio">
+    <meta name="msapplication-tooltip" content="Full Stack Developer Portfolio">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="images/profile.JPG" as="image" type="image/jpeg">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Modular Component CSS -->
+    <link rel="stylesheet" href="components/featured-projects.css">
+    <link rel="stylesheet" href="components/contact-form.css">
+    <link rel="stylesheet" href="components/footer.css">
+    <!-- Component Fixes -->
+    <link rel="stylesheet" href="component-fixes.css">
+    
+    <!-- Remove no-js class immediately -->
+    <script>document.documentElement.classList.remove('no-js');</script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sudip Dhungana",
+        "jobTitle": "Full Stack Developer",
+        "description": "Full Stack Developer with 3+ years experience in React, Node.js, Python",
+        "url": "sudipdhungana.com.np",
+        "sameAs": [
+            "https://www.linkedin.com/in/sudip-dgn-03/",
+            "https://github.com/Sudip0304"
+        ],
+        "knowsAbout": ["React", "Node.js", "Python", "JavaScript", "Web Development"],
+        "email": "sudipdgn03@gmail.com",
+        "nationality": "Nepali"
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+    
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" aria-hidden="true"></div>
+    
+    <nav role="navigation" aria-label="Main navigation">
+        <div class="mobile-menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-left" role="menubar">
+            <a href="#home" role="menuitem" aria-current="page">Home</a>
+            <a href="#about" role="menuitem">About</a>
+            <a href="#projects" role="menuitem">Projects</a>
+            <a href="#contact" role="menuitem">Contact</a>
+            <a href="services.html" role="menuitem">Services</a>
+            <a href="khagol-infotech.html" target="_blank" rel="noopener noreferrer" role="menuitem">Company</a>
+        </div>
+        <a href="hire-me.html" class="hire-me-btn" role="button">Hire Me</a>
+    </nav>
+
+    <main id="main-content">
+        <section id="home" class="hero-section" role="banner">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <img src="images/profile.JPG" alt="Sudip Dhungana - Full Stack Developer" class="profile-pic" loading="eager" width="200" height="200">
+                        </div>
+                        
+                        <!-- Social icons below profile -->
+                        <div class="social-icons-container">
+                            <a href="https://www.linkedin.com/in/sudip-dgn-03/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                                <img src="images/linkedin.png" alt="LinkedIn" width="24" height="24">
+                            </a>
+                            <a href="https://github.com/Sudip0304" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                                <img src="images/github.png" alt="GitHub" width="24" height="24">
+                            </a>
+                            <a href="mailto:sudipdgn03@gmail.com" class="social-icon" aria-label="Email">
+                                <img src="images/email.png" alt="Email" width="24" height="24">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-info">
+                        <div class="greeting-text">
+                            <span class="greeting">Hello, I'm</span>
+                        </div>
+                        <h1 class="hero-name">Sudip Dhungana</h1>
+                        <div class="role-container">
+                            <span class="role-prefix">I'm a</span>
+                            <span class="dynamic-role">Full Stack Developer | Backend Engineer | Frontend Specialist | UX Designer | Creative Thinker</span>
+                        </div>
+                        <p class="hero-description">
+                            Passionate about creating exceptional digital experiences that blend 
+                            <span class="highlight">innovative design</span> with 
+                            <span class="highlight">robust functionality</span>. 
+                            Let's build something amazing together.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn-primary" role="button" aria-label="View my projects">View My Work</a>
+                            <a href="#contact" class="btn-secondary" role="button" aria-label="Contact me">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-stats" role="region" aria-label="Professional statistics">
+                    <div class="stat-item">
+                        <span class="stat-number" aria-label="3 plus">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" aria-label="50 plus">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" aria-label="100 percent">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" role="region" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-header">
+                    <h2 id="about-heading" class="about-title">
+                        <span class="title-line">Who I Am</span>
+                        <span class="title-accent">&</span>
+                        <span class="title-line">What I Do</span>
+                    </h2>
+                    <div class="about-subtitle">
+                        <span>"Crafting Digital Experiences with Passion and Precision"</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-story">
+                        <div class="story-image">
+                            <div class="image-placeholder">
+                                <div class="code-animation">
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="story-text">
+                            <div class="story-paragraph">
+                                <h3>My Journey</h3>
+                                <p>From a curious computer science student to a passionate Full Stack Developer, my journey spans <strong>3+ years</strong> of transforming complex ideas into elegant digital solutions. I thrive on the intersection of creativity and technology, where innovative thinking meets clean, efficient code.</p>
+                            </div>
+                            
+                            <div class="story-paragraph">
+                                <h3>My Philosophy</h3>
+                                <p>I believe in building more than just applications—I create <em>experiences</em>. Every line of code I write is crafted with user empathy, performance optimization, and future scalability in mind. My approach combines cutting-edge technologies with timeless design principles.</p>
+                            </div>
+                            
+                            <div class="specialties">
+                                <div class="specialty-item">
+                                    <span class="specialty-icon">🚀</span>
+                                    <span class="specialty-text">Performance Optimization</span>
+                                </div>
+                                <div class="specialty-item">
+                                    <span class="specialty-icon">🎨</span>
+                                    <span class="specialty-text">UI/UX Design</span>
+                                </div>
+                                <div class="specialty-item">
+                                    <span class="specialty-icon">⚡</span>
+                                    <span class="specialty-text">Modern Architecture</span>
+                                </div>
+                                <div class="specialty-item">
+                                    <span class="specialty-icon">🔧</span>
+                                    <span class="specialty-text">DevOps & Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-showcase">
+                        <h3 class="skills-title">Technical Arsenal</h3>
+                        <div class="skills-tabs">
+                            <button class="tab-button active" data-category="frontend">Frontend</button>
+                            <button class="tab-button" data-category="backend">Backend</button>
+                            <button class="tab-button" data-category="tools">Tools & DevOps</button>
+                            <button class="tab-button" data-category="mobile">Mobile & Design</button>
+                        </div>
+                        
+                        <div class="skills-container">
+                            <div class="skill-category active" data-category="frontend">
+                                <div class="skills-grid">
+                                    <div class="skill-item" data-level="95">
+                                        <div class="skill-info">
+                                            <span class="skill-name">React</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="90">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Vue.js</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="98">
+                                        <div class="skill-info">
+                                            <span class="skill-name">JavaScript</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 98%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <div class="skill-info">
+                                            <span class="skill-name">TypeScript</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="92">
+                                        <div class="skill-info">
+                                            <span class="skill-name">HTML5/CSS3</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 92%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="88">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Tailwind CSS</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 88%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category" data-category="backend">
+                                <div class="skills-grid">
+                                    <div class="skill-item" data-level="93">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Node.js</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 93%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="87">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Python</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 87%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="90">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Express.js</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <div class="skill-info">
+                                            <span class="skill-name">MongoDB</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="82">
+                                        <div class="skill-info">
+                                            <span class="skill-name">PostgreSQL</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 82%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="88">
+                                        <div class="skill-info">
+                                            <span class="skill-name">REST APIs</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 88%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category" data-category="tools">
+                                <div class="skills-grid">
+                                    <div class="skill-item" data-level="85">
+                                        <div class="skill-info">
+                                            <span class="skill-name">AWS</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="80">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Docker</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="95">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Git</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="88">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Firebase</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 88%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="92">
+                                        <div class="skill-info">
+                                            <span class="skill-name">VS Code</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 92%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="78">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Kubernetes</span>
+                                            <span class="skill-level">Intermediate</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 78%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category" data-category="mobile">
+                                <div class="skills-grid">
+                                    <div class="skill-item" data-level="75">
+                                        <div class="skill-info">
+                                            <span class="skill-name">React Native</span>
+                                            <span class="skill-level">Intermediate</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Figma</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="88">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Adobe Creative</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 88%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="90">
+                                        <div class="skill-info">
+                                            <span class="skill-name">UI/UX Design</span>
+                                            <span class="skill-level">Expert</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="82">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Responsive Design</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 82%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item" data-level="87">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Web Accessibility</span>
+                                            <span class="skill-level">Advanced</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="--width: 87%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievements-section">
+                        <h3 class="achievements-title">Key Achievements</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🏆</div>
+                                <div class="achievement-content">
+                                    <h4>50+ Successful Projects</h4>
+                                    <p>Delivered scalable solutions across various industries</p>
+                                </div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">⭐</div>
+                                <div class="achievement-content">
+                                    <h4>100% Client Satisfaction</h4>
+                                    <p>Consistent 5-star ratings and repeat business</p>
+                                </div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🚀</div>
+                                <div class="achievement-content">
+                                    <h4>Performance Expert</h4>
+                                    <p>Optimized apps for 90+ PageSpeed scores</p>
+                                </div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🎓</div>
+                                <div class="achievement-content">
+                                    <h4>Continuous Learning</h4>
+                                    <p>Always exploring cutting-edge technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section - Loaded from modular component -->
+        <div id="featured-projects-container" data-component="featured-projects"></div>
+
+        <!-- Contact Section - Loaded from modular component -->
+        <div id="contact-form-container" data-component="contact-form"></div>
+    </main>
+    <!-- Footer Section - Loaded from modular component -->
+    <div id="footer-container" data-component="footer"></div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+    <!-- Modular Component JavaScript -->
+    <script src="components/skills-tabs.js"></script>
+    <script src="components/project-filters-simple.js"></script>
+    <script src="components/contact-form.js"></script>
+    <script src="components/footer.js"></script>
+    <!-- Component Loader Script -->
+    <script src="component-loader.js"></script>
+</body>
+</html>

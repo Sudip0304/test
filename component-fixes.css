@@ -1,0 +1,273 @@
+/* Component Bug Fixes */
+
+/* Fix for contact form label positioning to prevent overlap */
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.contact-form .form-group label {
+    position: static !important;
+    color: #f0e6d2;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    z-index: 1;
+    transform: none !important;
+    background: transparent;
+    padding: 0;
+    pointer-events: auto;
+    top: auto;
+    left: auto;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group select,
+.contact-form .form-group textarea {
+    margin-top: 0;
+}
+
+.contact-form .form-group.focused label {
+    color: #8bc34a;
+}
+
+/* Ensure labels are always above inputs */
+.contact-form .form-group label + input,
+.contact-form .form-group label + select,
+.contact-form .form-group label + textarea {
+    margin-top: 0.5rem;
+}
+
+/* Fix for form visibility and styling */
+.contact-form {
+    min-height: 600px;
+    position: relative;
+}
+
+.form-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Center align section intro texts */
+.section-intro {
+    text-align: center !important;
+    margin: 1.5rem auto !important;
+    max-width: 800px !important;
+}
+
+/* Center align the projects CTA text */
+.projects-cta .cta-content p {
+    text-align: center !important;
+}
+
+/* Ensure center alignment on mobile devices */
+@media (max-width: 768px) {
+    .section-intro {
+        text-align: center !important;
+        margin: 1rem auto !important;
+        padding: 0 1rem !important;
+    }
+    
+    .projects-cta .cta-content p {
+        text-align: center !important;
+    }
+}
+
+/* Add spacing above Featured Projects section */
+#projects {
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+
+/* Responsive spacing for mobile */
+@media (max-width: 768px) {
+    #projects {
+        padding-top: 1.5rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #projects {
+        padding-top: 1rem;
+        margin-top: 0.25rem;
+    }
+}
+
+/* Enhanced Compact Project Cards */
+.project-card {
+    padding: 1.5rem !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+    min-height: 400px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.project-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+.project-content {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Compact Visual Section */
+.project-visual {
+    margin-bottom: 1rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
+.project-icon {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+}
+
+.project-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.project-category {
+    font-size: 0.75rem !important;
+}
+
+/* Compact Header */
+.project-header {
+    margin-bottom: 0.75rem !important;
+}
+
+.project-header h3 {
+    font-size: 1.1rem !important;
+    margin: 0 !important;
+}
+
+.project-status {
+    padding: 0.25rem 0.6rem !important;
+    font-size: 0.7rem !important;
+}
+
+/* Compact Description */
+.project-description {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    text-overflow: clip !important;
+    max-height: none !important;
+    height: auto !important;
+    flex-shrink: 0 !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
+}
+
+/* Compact Features */
+.project-features {
+    margin-bottom: 1rem !important;
+    gap: 0.4rem !important;
+}
+
+.feature-item {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.6rem !important;
+    border-radius: 8px !important;
+}
+
+/* Compact Tech Stack */
+.project-tech {
+    margin-bottom: 1rem !important;
+    gap: 0.4rem !important;
+}
+
+.tech-tag {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.6rem !important;
+    border-radius: 8px !important;
+}
+
+/* Enhanced Links */
+.project-links {
+    gap: 0.8rem !important;
+    margin-top: auto !important;
+    padding-top: 1rem !important;
+}
+
+.project-link {
+    padding: 0.8rem 1.4rem !important;
+    font-size: 0.9rem !important;
+    border-radius: 10px !important;
+    min-height: 44px !important;
+    font-weight: 600 !important;
+}
+
+.project-link svg,
+.project-link img {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+/* Grid adjustments for compact cards */
+.projects-grid {
+    gap: 1.5rem !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+}
+
+/* Responsive adjustments for compact cards */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 1.25rem !important;
+    }
+    
+    .project-description {
+        overflow: visible !important;
+        white-space: normal !important;
+        display: block !important;
+        max-height: none !important;
+        height: auto !important;
+    }
+    
+    .project-links {
+        flex-direction: row !important;
+        gap: 0.6rem !important;
+        padding-top: 0.8rem !important;
+    }
+    
+    .project-link {
+        padding: 0.7rem 1.2rem !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        padding: 1rem !important;
+    }
+    
+    .project-header h3 {
+        font-size: 1rem !important;
+    }
+}
+
+/* Make sure features and tech sections don't compress */
+.project-features,
+.project-tech {
+    flex-shrink: 0 !important;
+}
